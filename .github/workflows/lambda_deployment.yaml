@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Zip
+        run: zip -r function.zip .
       - name: AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
@@ -22,6 +24,7 @@ jobs:
         uses: imehedi/actions-awscli-v2@latest
         with:
           args: "lambda update-function-code \
-            --function-name arn:aws:lambda:ap-southeast-1:274755515534:function:just_a_test"
+            --function-name arn:aws:lambda:ap-southeast-1:274755515534:function:just_a_test \
+            --zip-file fileb://function.zip"
 
        
