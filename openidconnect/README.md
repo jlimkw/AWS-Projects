@@ -35,3 +35,4 @@ Trust policy:
     ]
 }
 ```
+### GitHub action workflow: .github/workflows/lambda_deployment.yaml
