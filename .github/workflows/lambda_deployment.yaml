@@ -19,7 +19,7 @@ jobs:
           role-to-assume: arn:aws:iam::274755515534:role/GitHub
           aws-region: us-east-1
       - name: AWS cli 
-        uses: jlimkw/actions-awscli-v2@latest
+        uses: imehedi/actions-awscli-v2@latest
         with:
           args: "lambda update-function-code \
             --function-name arn:aws:lambda:ap-southeast-1:274755515534:function:just_a_test"
