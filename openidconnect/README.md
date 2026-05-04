@@ -5,11 +5,10 @@ https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-depl
 IAM -> Identity Providers -> Add provider  
 OpenID Connect -> Provider URL: https://token.actions.githubusercontent.com
   
-
-![alt text](image.png)
+![alt text](image-2.png)
   
 Next, create a new role:
-![alt text](image-1.png)
+![alt text](image.png)
 
 Skip Add permissions  
 
@@ -26,7 +25,7 @@ Trust policy:
             "Action": "sts:AssumeRoleWithWebIdentity",
             "Condition": {
                 "StringEquals": {
-                    "token.actions.githubusercontent.com:aud": "sts.amazon.aws"
+                    "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
                 },
                 "StringLike": {
                     "token.actions.githubusercontent.com:sub": "repo:jlimkw/*"
