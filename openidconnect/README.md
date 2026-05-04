@@ -1,1 +1,3 @@
-## Connect Github actions to AWS via AWS OpenID Connect 
+## AWS OpenID Connect 
+### Connect Github actions to AWS via openid connect
+### Deploy Lambda via the CI/CD
