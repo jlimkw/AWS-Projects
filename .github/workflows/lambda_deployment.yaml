@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Zip
-        run: zip -r function.zip .
+        run: zip -r function.zip ../openidconnect/src/lambda_function.py
       - name: AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
