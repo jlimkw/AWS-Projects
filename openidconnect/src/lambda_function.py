@@ -3,5 +3,5 @@ import json
 def lambda_handler(event, context):
     return {
         'statusCode': 200,
-        'body': json.dumps('Just a Lambda test!')
+        'body': json.dumps('Just a Lambda test for OIDC')
     }
