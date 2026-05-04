@@ -6,4 +6,6 @@ OpenID Connect -> Provider URL: https://token.actions.githubusercontent.com
   
 
 ![alt text](image.png)
-
+  
+Next, create a new role:
+![alt text](image-1.png)
