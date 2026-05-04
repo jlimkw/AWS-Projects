@@ -2,7 +2,8 @@ name: Deploy Lambda Function Workflow
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 permissions:
   id-token: write
   contents: read
